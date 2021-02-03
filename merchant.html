@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="adventure game">
+    <meta name="keywords" content="tuscan, adventure, game, rpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Darko Markan">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Tuscan</title>
+<script>
+  $(document).ready(function() {
+    $("#next").click(function() {
+      $("#merchant").animate({
+        right: '220px',
+      });
+    });
+  });
+  </script>
+  </head>
+  <body>
+
+    <div id="textbox"></div>
+    <a href="index.html">
+<button id="end">THE END</button>
+</a>
+    <img id="halfling" src="slike/halfling.jpg" width="200px" height="300px">
+    <img id="merchant" src="slike/merchant.jpg" width="200px" height="300px">
+    <img id="dialogbox" src="slike/dialogbox.png" width="400px" height="300px">
+    <img id="dialogbox3" src="slike/dialogbox2.png" width="400px" height="300px">
+
+<button id="next" onclick="pozdrav()">Next</button>
+<button id="next2">Next</button>
+<button id="next3">Next</button>
+<button id="next4">Next</button>
+<button id="next5">Next</button>
+<button id="next6">Next</button>
+<button id="next7">Next</button>
+<button id="next8">Next</button>
+<button id="next9">Next</button>
+<a href="mountain.html">
+<button id="next10">Next</button>
+</a>
+<button id="option1">Thank you for welcoming us into your store, we were wondering if you can tell us more about this diamond</button>
+<button id="option2">Hi Merchant! Can you look at this diamond for us and tell us more about it?</button>
+<button id="option3">Let's get to the point [SHOW HIM THE DIAMOND]</button>
+<button id="option4" onclick="kraj()">I've changed my mind, let's go...</button>
+
+<button id="option1_2">What power? Can you tell us more about it?</button>
+<button id="option2_2">Power? Tell us all about it!</button>
+<button id="option3_2">The power you say... how much would you give for this diamond?</button>
+<button id="option1_3">We have to lift the curse from Cabot Cove village! Let's go to the Dark Tower to find this hammer!</button>
+<button id="option2_3">It's not gonna be an easy task, but we have to help Cabot Cove village, let's go!</button>
+<button id="option3_3">Ok, I heard enough, let's go find this hammer!</button>
+<button id="option4" onclick="kraj()">I've changed my mind, let's go...</button>
+
+    <p id="story">You reached the peak of the Snow Mountain, where you found a small store.
+You entered in hope that the Merchant can help you identify this beautiful diamond you carry...
+    </p>
+    <p id="story2"><br>As you show him the diamond the Merchant eyes got wider
+    </p>
+<p id="story3"><br>You left the store without getting any answers, your adventure ends here...
+    </p>
+    <p id="story4">The duo left the store and went in the search of Thor hammer so they can lift the curse and save Cabot Cove village, but this quest won't be easy, because in the few moments, the enemy will show his face...
+        </p>
+
+    <p id="text">Ooh, I have customers, pardon my surprise, but not that many folks come here every day, how may I be of service?</p>
+    <p id="text2">Ooh, that's Florentine Diamond, where did you get it from?</p>
+    <p id="text3">I found it in caves near the Kingswood, is it worth anything?</p>
+    <p id="text4">Worth? It's the rarest diamond in this land, it holds great power!</p>
+    <p id="text5">That's Florentine Diamond also known as Tuscan. It has been cut by Lodewyk van Bercken for Charles the Bold, Duke of Burgundy.
+    Charles is said to have been wearing it when he fell in the Battle of Morat and since then the diamond was lost</p>
+    <p id="text6">I can't buy it from you, it's cursed! The whole Cabot Cove village is turned to stone because of it, you have to destroy it to lift the curse!</p>
+    <p id="text7">It is said that it's cursed! The whole Cabot Cove village is turned to stone because of it, you have to destroy it to lift the curse!</p>
+<p id="text8">How can we destroy this diamond?</p>
+<p id="text9">The Florentine Diamond can only be destroyed by Thor hammer which can be found in the Dark Tower guarded by Red Dragon</p>
+<embed src="zvuk/merchant.mp3" autostart="true" loop="true" width="2" height="0">
+</embed>
+  </body>
+  <script src="main3.js"></script>
+</html>

@@ -1,0 +1,46 @@
+body {
+  background-image: url("slike/end.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+  position: relative;
+  padding-top: 50%;
+  background-color: black;
+  background-size: cover;
+}
+
+
+h1 {
+  font-size: 200px;
+  font-family: Brush Script MT, cursive;
+  top: 50px;
+  left: 25%;
+  position: absolute;
+  width:750px;
+  color:#EF6C33;
+  -webkit-text-stroke: 3px black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: Brush Script MT, cursive;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width:750px;
+  color:#EF6C33;
+  -webkit-text-stroke: 3px black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}

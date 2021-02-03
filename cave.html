@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="adventure game">
+    <meta name="keywords" content="tuscan, adventure, game, rpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Darko Markan">
+    <link rel="stylesheet" href="style7.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Tuscan</title>
+  <script>
+      $(document).ready(function() {
+        $("#next2").click(function() {
+          $("#spider").animate({
+            top: '140px',
+          });
+        });
+      });
+      $(document).ready(function() {
+        $("#next2").click(function() {
+          $("#halfling").animate({
+            left: '20px',
+          });
+        });
+      });
+      $(document).ready(function() {
+        $("#next2").click(function() {
+          $("#dialogbox").animate({
+            left: '220px',
+          });
+        });
+      });
+      $(document).ready(function() {
+        $("#next2").click(function() {
+          $("#elf").animate({
+            right: '20px',
+          });
+        });
+      });
+      $(document).ready(function() {
+        $("#next2").click(function() {
+          $("#dialogbox3").animate({
+            right: '220px',
+          });
+        });
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id="textbox"></div>
+
+    <img id="halfling" src="slike/halfling.jpg" width="200px" height="300px">
+    <img id="elf" src="slike/elf.jpg" width="200px" height="300px">
+    <img id="spider" src="slike/spider.jpg" width="200px" height="300px">
+    <img id="dialogbox" src="slike/dialogbox.png" width="400px" height="300px">
+    <img id="dialogbox3" src="slike/dialogbox2.png" width="400px" height="300px">
+    <a href="index.html">
+      <button id="end">THE END</button>
+    </a>
+    <button id="next">Next</button>
+    <button id="next2" onclick="pauk()">Next</button>
+    <button id="next3">Next</button>
+    <button id="next4">Next</button>
+    <button id="next5">Next</button>
+    <button id="next6">Next</button>
+    <a href="mine.html">
+    <button id="next7">Next</button>
+    </a>
+
+    <button id="option1" onclick="kraj()">[Godwin]</button>
+    <button id="option2" onclick="pauk_umire()">[Celestria]</button>
+    <button id="option3" onclick="pauk_umire()">[Cut the web with your sword]</button>
+    <button id="option4" onclick="kraj()">ESCAPE</button>
+
+    <button id="option1_2">Your brother is avenged...</button>
+    <button id="option2_2">You got your revenge, now let's go find Thor hammer so we can destroy this diamond!</button>
+    <button id="option3_2">We helped you, now you help us!</button>
+    <button id="option4_2">The Spider is dead, now to finish our quest!</button>
+
+    <p id="text">Watch your heads!</p>
+    <p id="text2">WOOOAH!</p>
+    <p id="text3">WOOOAH!</p>
+    <p id="text4"><br>Let me stab him with a dagger!</p>
+    <p id="text5"><br>Let me shoot him with an arrow!</p>
+    <p id="text6">DIE YOU FOUL BEAST!</p>
+    <p id="text7">A deal is a deal, let's continue forward...</p>
+
+    <p id="story"><br>The Cave is dark, full of the spider web, but where is the spider?
+    </p>
+    <p id="story2">Godwin tried to stab the Spider with a dagger, but he couldn't reach it! The Spider jumped and killed you!
+This is the end of your adventure...
+    </p>
+    <p id="story3">You escaped the cave, leaving your friends behind, you returned to Rivendell and lived your life as a coward...
+    </p>
+    <p id="story4">Celestria fired her arrow directly into the Spider's heart, killing it instantly
+    </p>
+    <p id="story5">When you cut the web with your sword the Spider fell down and Godwin stabbed it in the heart
+    </p>
+    <p id="story6">The party continued their adventure carrying precious yellow diamond to destroy it in the Dark Tower... but they have to go through the Mine first...
+    </p>
+
+  <embed src="zvuk/cave.mp3" autostart="true" loop="true" width="2" height="0">
+    </embed>
+  </body>
+
+<script src="main6.js"></script>
+</html>

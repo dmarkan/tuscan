@@ -1,0 +1,590 @@
+body {
+  background-image: url("slike/store.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+  position: relative;
+  padding-top: 50%;
+  background-color: black;
+  background-size: cover;
+}
+
+#textbox {
+  width: 1000px;
+  height: 300px;
+  background-color: #fff;
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  opacity: 0.3;
+  border: solid black 5px;
+}
+
+#halfling {
+  top: 15%;
+  left: 15%;
+  position: absolute;
+  border: solid #fff 2px;
+  visibility: hidden;
+}
+
+#merchant {
+  top: 15%;
+  right: 0px;
+  position: absolute;
+  border: solid #fff 2px;
+  visibility: hidden;
+}
+
+#dialogbox {
+  top: 0;
+  left: 415px;
+  position: absolute;
+  visibility: hidden;
+}
+
+#dialogbox3 {
+  top: 0;
+  right: 420px;
+  position: absolute;
+  visibility: hidden;
+}
+
+#end {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#end:hover {
+  opacity: 0.7;
+}
+
+#story {
+  top: 10%;
+  left: 28%;
+  background-color: #fff;
+  border: solid black 5px;
+  font-size: 33px;
+  height: 180px;
+  max-width: 600px;
+  padding: 10px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+}
+#story2 {
+  top: 10%;
+  left: 28%;
+  background-color: #fff;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 180px;
+  max-width: 600px;
+  padding: 10px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  visibility: hidden;
+  text-align: center;
+}
+
+#story3 {
+  top: 10%;
+  left: 28%;
+  background-color: #fff;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 180px;
+  max-width: 600px;
+  padding: 10px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  visibility: hidden;
+  text-align: center;
+}
+
+#story4 {
+  top: 10%;
+  left: 28%;
+  background-color: #fff;
+  border: solid black 5px;
+  font-size: 31px;
+  height: 180px;
+  max-width: 600px;
+  padding: 10px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  visibility: hidden;
+  text-align: center;
+}
+
+#next {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#next2 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next3 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next4 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next5 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next6 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next7 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next8 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next9 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next10 {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#next:hover {
+  opacity: 0.7;
+}
+
+#next2:hover {
+  opacity: 0.7;
+}
+
+#next3:hover {
+  opacity: 0.7;
+}
+
+#next4:hover {
+  opacity: 0.7;
+}
+
+#next5:hover {
+  opacity: 0.7;
+}
+
+#next6:hover {
+  opacity: 0.7;
+}
+
+#next7:hover {
+  opacity: 0.7;
+}
+
+#next8:hover {
+  opacity: 0.7;
+}
+
+#next9:hover {
+  opacity: 0.7;
+}
+
+#next10:hover {
+  opacity: 0.7;
+}
+
+#text {
+  font-size: 25px;
+  font-family: fantasy;
+  top: 5%;
+  right: 450px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+#text2 {
+  font-size: 25px;
+  font-family: fantasy;
+  top: 5%;
+  right: 450px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+#text3 {
+  font-size: 25px;
+  font-family: fantasy;
+  top: 5%;
+  left: 470px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+#text4 {
+  font-size: 25px;
+  font-family: fantasy;
+  top: 5%;
+  right: 450px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+#text5 {
+  font-size: 19px;
+  font-family: fantasy;
+  top: 25px;
+  right: 450px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+#text6 {
+  font-size: 24px;
+  font-family: fantasy;
+  top: 25px;
+  right: 450px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+#text7 {
+  font-size: 25px;
+  font-family: fantasy;
+  top: 25px;
+  right: 450px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+#text8 {
+  font-size: 25px;
+  font-family: fantasy;
+  top: 5%;
+  left: 470px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+#text9 {
+  font-size: 25px;
+  font-family: fantasy;
+  top: 5%;
+  right: 450px;
+  position: absolute;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+#option1 {
+  top: 69%;
+  left: 23%;
+  border: solid black 5px;
+  font-size: 18px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option2 {
+  top: 69%;
+  left: 55%;
+  border: solid black 5px;
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option3 {
+  top: 87%;
+  left: 23%;
+  border: solid black 5px;
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option4 {
+  top: 87%;
+  left: 55%;
+  border: solid black 5px;
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option1:hover {
+  opacity: 0.7;
+}
+
+#option2:hover {
+  opacity: 0.7;
+}
+
+#option3:hover {
+  opacity: 0.7;
+}
+
+#option4:hover {
+  opacity: 0.7;
+}
+#option1_2 {
+  top: 69%;
+  left: 23%;
+  border: solid black 5px;
+  font-size: 18px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option2_2 {
+  top: 69%;
+  left: 55%;
+  border: solid black 5px;
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option3_2 {
+  top: 87%;
+  left: 23%;
+  border: solid black 5px;
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option1_2:hover {
+  opacity: 0.7;
+}
+
+#option2_2:hover {
+  opacity: 0.7;
+}
+
+#option3_2:hover {
+  opacity: 0.7;
+}
+
+#option1_3 {
+  top: 69%;
+  left: 23%;
+  border: solid black 5px;
+  font-size: 18px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option2_3 {
+  top: 69%;
+  left: 55%;
+  border: solid black 5px;
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#option3_3 {
+  top: 87%;
+  left: 23%;
+  border: solid black 5px;
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+#option1_3:hover {
+  opacity: 0.7;
+}
+
+#option2_3:hover {
+  opacity: 0.7;
+}
+
+#option3_3:hover {
+  opacity: 0.7;
+}

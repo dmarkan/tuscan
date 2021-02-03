@@ -1,0 +1,46 @@
+body {
+  background-image: url("slike/index.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+  position: relative;
+  padding-top: 50%;
+  background-color: black;
+  background-size: cover;
+}
+
+#play {
+  top: 48%;
+  left: 47%;
+  border: solid black 5px;
+  font-size: 35px;
+  height: 100px;
+  width: 100px;
+  max-width: 300px;
+  font-family: fantasy;
+  position: absolute;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#play:hover {
+  opacity: 0.7;
+}
+
+h1 {
+  font-size: 300px;
+  font-family: Brush Script MT, cursive;
+  top: 28%;
+  left: 25%;
+  position: absolute;
+  width:750px;
+  color:#EF6C33;
+  -webkit-text-stroke: 3px black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}

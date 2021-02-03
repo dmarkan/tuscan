@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="adventure game">
+  <meta name="keywords" content="tuscan, adventure, game, rpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Darko Markan">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <title>Tuscan</title>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#next").click(function() {
+        $("#waitress").animate({
+          left: '250px',
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#next").click(function() {
+        $("#dialogbox").animate({
+          left: '450px',
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#next").click(function() {
+        $("#text").animate({
+          left: '500px',
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#next2").click(function() {
+        $("#waitress").animate({
+          left: '-250px',
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#next2").click(function() {
+        $("#dialogbox").animate({
+          left: '-450px',
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#next2").click(function() {
+        $("#opt3_answer").animate({
+          left: '-500px',
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#next5").click(function() {
+        $("#orc").animate({
+          left: '420px',
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#next6").click(function() {
+        $("#orc").animate({
+          left: '-420px',
+        });
+      });
+    });
+  </script>
+  <div id="textbox"></div>
+  <img id="waitress" src="slike/waitress.jpg" width="200px" height="300px">
+  <img id="halfling" src="slike/halfling.jpg" width="200px" height="300px">
+  <img id="orc" src="slike/orc.jpg" width="200px" height="300px">
+  <img id="dialogbox" src="slike/dialogbox.png" width="400px" height="300px">
+  <img id="dialogbox2" src="slike/dialogbox.png" width="400px" height="300px">
+  <img id="dialogbox3" src="slike/dialogbox2.png" width="400px" height="300px">
+  <a href="index.html">
+    <button id="end">THE END</button>
+  </a>
+  <button id="next" onclick="cao()">Next</button>
+  <button id="next2">Next</button>
+  <button id="next3">Next</button>
+  <button id="next4" onclick="smeh()">Next</button>
+  <button id="next5">Next</button>
+  <button id="next6" onclick="pomoc()">Next</button>
+  <button id="next7">Next</button>
+  <button id="next8">Next</button>
+  <a href="street.html">
+    <button id="next9">Next</button>
+  </a>
+  <button id="option1">No, I'm not, I'm from Rivendell, got something to drink here?</button>
+  <button id="option2">Actually, yes I am, we just haven't met before, my name is Arthur, what's yours?</button>
+  <button id="option3">Hi to you too, bring me a large ale!</button>
+  <button id="option4">I don't have time for small chit chat, what do you have to drink?</button>
+  <button id="option1_2">An ale is fine, thank you...</button>
+  <button id="option2_2">A glass of wine, please</button>
+  <button id="option3_2">Bring me a large ale, matter of fact, bring two!</button>
+  <button id="option4_2">An ale? What do you think I'm a peasant? Bring me the finest wine you have!</button>
+  <button id="option1_3">Calm down my friend, are you alright?</button>
+  <button id="option2_3">Stand up Halfling! do you know this orc?</button>
+  <button id="option3_3">Why should I help you, what's in it for me?</button>
+  <button id="option4_3" onclick="kraj()">That's none of my business!</button>
+  <button id="option1_4">All right, let's go outside to find him!</button>
+  <button id="option2_4">Sure, I always like to help the weak, let's go!</button>
+  <button id="option3_4">I'll help you, better don't try to double cross me! Let's go!</button>
+  <button id="option4_4" onclick="kraj()">That's none of my business!</button>
+  <p id="text">Hi stranger, haven't seen you before,
+    you are not from around these parts, are you?</p>
+  <p id="text2">Thief! Give me back what you stole from me!</p>
+  <p id="text3">Hahaha Move out of the way Halfling, before I kill you!</p>
+  <p id="text4">Ugh! Somebody help me please!</p>
+  <p id="text5">Help me stranger please! That Orc took something from me!</p>
+  <p id="story">You are in a town Stone Cold. You enter a small tavern, nobody bothers to look at you, you sit at the table when the waitress approaches your table from your left...</p>
+  <p id="story2"><br>You hear somebody arguing in the background...</p>
+  <p id="story3"><br>You approached the Halfling...</p>
+  <p id="story4"><br>You returned to your table and finished your drink,
+    your adventure has ended before it began...</p>
+  <p id="story5">You went outside the tavern with the Halfling to look for the thief Orc,
+    and that's the beginning of this adventure...</p>
+  <p id="opt1_answer">Of course handsome! Would you like me to bring you a large ale, or some wine perhaps?</p>
+  <p id="opt2_answer">Well, nice to meet you Arthur, my name is Ada, what would you like to drink today?</p>
+  <p id="opt3_answer">Sure thing, Coming right over mister!</p>
+  <p id="opt4_answer">Not in the mood, I see, well... We have an ale, some good quality wine, what do you prefer?</p>
+  <p id="opt1_answer2">I'm ok, thanks! Can you help me catch this orc and retrieve what's mine, I'll reward you for your efforts!</p>
+  <p id="opt2_answer2">Ugh! No, I don't know him, please help me chase him!</p>
+  <p id="opt3_answer2">A large pile of coin...if you help me retrieve what's mine...</p>
+
+  <embed src="zvuk/tavern.mp3" autostart="true" loop="true" width="2" height="0">
+  </embed>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>

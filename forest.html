@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="adventure game">
+    <meta name="keywords" content="tuscan, adventure, game, rpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Darko Markan">
+    <link rel="stylesheet" href="style6.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Tuscan</title>
+<script>
+      $(document).ready(function() {
+        $("#next2").click(function() {
+          $("#elf").fadeIn(3000);
+            });
+        });
+      </script>
+  </head>
+
+  <body>
+
+    <div id="textbox"></div>
+    <a href="index.html">
+  <button id="end">THE END</button>
+  </a>
+    <img id="halfling" src="slike/halfling.jpg" width="200px" height="300px">
+    <img id="elf" src="slike/elf.jpg" width="200px" height="300px">
+    <img id="dialogbox" src="slike/dialogbox.png" width="400px" height="300px">
+    <img id="dialogbox3" src="slike/dialogbox2.png" width="400px" height="300px">
+
+    <button id="next">Next</button>
+    <button id="next2" onclick="stani()">Next</button>
+    <button id="next3">Next</button>
+    <button id="next4">Next</button>
+    <a href="cave.html">
+    <button id="next5">Next</button>
+    </a>
+
+    <button id="option1">My name is Arthur and this is Godwin, we don't want any troubles</button>
+    <button id="option2">Who are you? Why are you threatening us?</button>
+    <button id="option3">Move aside Elf, I'm not afraid of your kind</button>
+    <button id="option4" onclick="kraj()">[Continue walking...]</button>
+
+    <button id="option1_2">We are heading to the Dark Tower to find Thor hammer so we can free Cabot Cove village</button>
+    <button id="option2_2">We are going to finish a quest, want to join?</button>
+    <button id="option3_2">We wanna slay the Red Dragon!</button>
+    <button id="option4_2" onclick="kraj()">That's none of your business!</button>
+
+    <button id="option1_3">Deal, let's go to revenge your brother!</button>
+    <button id="option2_3">Ok, let's slay this Spider</button>
+    <button id="option3_3">I'm always open for the new quests, we'll help you</button>
+    <button id="option4_3" onclick="kraj()">Forget it! let's go...</button>
+
+    <p id="text">I don't like this, it's too quiet...</p>
+    <p id="text2">Hold it! One more step and I'll put an arrow trough your pretty face!</p>
+    <p id="text3">Well Arthur, my name is Celestria, what business do you have traveling through the Green Forest?</p>
+    <p id="text4">I'm Celestria, the queen of Green Forest! Tell me, what business do you have traveling through here?</p>
+    <p id="text5">Ooh, quite a mouth on you, speak, what business do you have traveling through here?</p>
+    <p id="text6">Interesting, maybe I can help you... if you help me first</p>
+    <p id="text7">Maybe... but you have to do something for me first</p>
+    <p id="text8">Sounds like fun! I'll join you if you can help me with something</p>
+    <p id="text9">I want to revenge my brother who was killed by the Spider that lives in the Caves nearby! Help me slay the Spider and I'll help you find the Thor hammer</p>
+
+
+    <p id="story"><br>You enter the Green Forest...
+    </p>
+<p id="story2">You ignored the Elf's warning and she launched an arrow straight trough your neck! Your adventure ends here...
+    </p>
+
+    <p id="story3">As soon as you said that the Elf launched an arrow straight trough your neck! Your adventure ends here...
+    </p>
+
+    <p id="story4">The Elf joined your company after you agreed to help to take on her revenge.
+You ventured inside nearby caves to slay the Spider that killed her brother
+    </p>
+
+  </body>
+  <embed src="zvuk/forest.mp3" autostart="true" loop="true" width="2" height="0">
+  </embed>
+  <script src="main5.js"></script>
+</html>

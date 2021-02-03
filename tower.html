@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="adventure game">
+    <meta name="keywords" content="tuscan, adventure, game, rpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Darko Markan">
+    <link rel="stylesheet" href="style9.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Tuscan</title>
+  <script>
+  $(document).ready(function() {
+    $("#next4").click(function() {
+      $("#dragon").fadeIn(3000);
+        });
+    });
+    $(document).ready(function() {
+      $("#blow").click(function() {
+        $("#dragon").fadeOut(3000);
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="textbox"></div>
+
+    <img id="halfling" src="slike/halfling.jpg" width="200px" height="300px">
+    <img id="elf" src="slike/elf.jpg" width="200px" height="300px">
+      <img id="dwarf" src="slike/dwarf.jpg" width="200px" height="300px">
+      <img id="halfling2" onclick="kraj()" src="slike/halfling.jpg" width="200px" height="300px">
+      <img id="halfling3" onclick="bol()" src="slike/halfling.jpg" width="200px" height="300px">
+      <img id="elf2" onclick="bol()" src="slike/elf.jpg" width="200px" height="300px">
+        <img id="dwarf2" onclick="kraj()" src="slike/dwarf.jpg" width="200px" height="300px">
+        <img id="dwarf3" onclick="kraj()" src="slike/dwarf.jpg" width="200px" height="300px">
+        <img id="dwarf4" onclick="bol()" src="slike/dwarf.jpg" width="200px" height="300px">
+    <img id="dragon" src="slike/dragon.gif" width="500px" height="300px">
+    <img id="dialogbox" src="slike/dialogbox.png" width="400px" height="300px">
+    <img id="dialogbox2" src="slike/dialogbox2.png" width="400px" height="300px">
+    <img id="dialogbox3" src="slike/dialogbox2.png" width="400px" height="300px">
+    <a href="index.html">
+      <button id="end">THE END</button>
+    </a>
+    <button id="next">Next</button>
+    <button id="next2">Next</button>
+    <button id="next3">Next</button>
+    <button id="next4" onclick="zmaj()">Next</button>
+    <button id="next5">Next</button>
+    <button id="next6">Next</button>
+    <button id="next7">Next</button>
+      <button id="next8">Next</button>
+      <button id="next9">Next</button>
+      <button id="next10">Next</button>
+      <button id="next11">Next</button>
+      <button id="next12">Next</button>
+      <a href="village.html">
+      <button id="next13">Next</button>
+      </a>
+
+    <button id="choice">Who will attack?</button>
+    <button id="blow" onclick="smrt()">[Land the final blow]</button>
+
+
+    <button id="option1">My name is Arthur, these are my companions and friends, Godwin, Celestria and Edwin, we came for Thor hammer</button>
+    <button id="option2">I'm Arthur, son of Uther, I came to take the Thor hammer!</button>
+    <button id="option3">Just give us Thor hammer and we'll be on our way...</button>
+    <button id="option4" onclick="kraj()">ESCAPE</button>
+
+    <button id="option1_2">Your brother is avenged...</button>
+    <button id="option2_2">You got your revenge, now let's go find Thor hammer so we can destroy this diamond!</button>
+    <button id="option3_2">We helped you, now you help us!</button>
+    <button id="option4_2">The Spider is dead, now to finish our quest!</button>
+
+    <p id="text">This is it! We are finally here!</p>
+    <p id="text2">Wow! This tower is huge!</p>
+    <p id="text3">Where is this Dragon? I wanna kill him!</p>
+    <p id="text4"><br>Here I am Dwarf! Who dares to disturb Nilreintur, The Firestarter?</p>
+    <p id="text5">Beware! Better attack from the range first!</p>
+    <p id="text6"><br>Foolish mortal, you think you can take the Thor hammer from me? I'll turn you to dust for disturbing me!</p>
+    <p id="text7">Great! Now attack with a dagger!</p>
+    <p id="text8">Quick! Now hit him with an axe!</p>
+      <p id="text9">FINISH HIM!</p>
+      <p id="text10">We did it! The Red Dragon is dead!</p>
+      <p id="text11">Edwin, quick! Destroy the Diamond with Thor hammer!</p>
+      <p id="text12">Hiyaaaaah!</p>
+
+    <p id="story">You finally arrived to the Dark Tower, the party is moving slowly, in hope to avoid the Red Dragon...
+    </p>
+    <p id="story2">You tried to escape, but the Red Dragon unleashed his flames and turned you into dust!
+Your adventure ended...
+    </p>
+    <p id="story3">The attack was unsuccessful, the Dragon unleashed his flames and turned you into dust!
+Your adventure ended...
+    </p>
+    <p id="story4">The Dwarf destroyed the Florentine diamond with Thor hammer, and the curse was lifted from Cabot Cove village, the party exited the Dark Tower and rushed there...
+    </p>
+
+
+<embed src="zvuk/battle.mp3" autostart="true" loop="true" width="2" height="0">
+    </embed>
+  </body>
+
+<script src="main8.js"></script>
+</html>

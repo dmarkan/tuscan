@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="adventure game">
+  <meta name="keywords" content="tuscan, adventure, game, rpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Darko Markan">
+  <link rel="stylesheet" href="style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <title>Tuscan</title>
+  <script>
+    $(document).ready(function() {
+      $("#option2_2").click(function() {
+        $("#orc").animate({
+          height: '50px',
+          width: '50px',
+          top: '-150px',
+        });
+      });
+    });
+    $(document).ready(function() {
+      $("#option3_2").click(function() {
+        $("#orc").animate({
+          height: '50px',
+          width: '50px',
+          top: '-150px',
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="textbox"></div>
+
+  <img id="halfling" src="slike/halfling.jpg" width="200px" height="300px">
+  <img id="orc" src="slike/orc.jpg" width="200px" height="300px">
+  <img id="dialogbox" src="slike/dialogbox.png" width="400px" height="300px">
+  <img id="dialogbox3" src="slike/dialogbox2.png" width="400px" height="300px">
+  <a href="index.html">
+    <button id="end">THE END</button>
+  </a>
+  <button id="next">Next</button>
+  <button id="next2" onclick="smeh()">Next</button>
+  <button id="next3">Next</button>
+  <button id="next4">Next</button>
+  <button id="next5">Next</button>
+  <button id="next6">Next</button>
+  <button id="next7">Next</button>
+  <button id="next8">Next</button>
+  <button id="next9">Next</button>
+  <a href="merchant.html">
+    <button id="next10">Next</button>
+  </a>
+
+  <button id="option1">ATTACK!</button>
+  <button id="option2">You thief! Give back what you stole!</button>
+  <button id="option3">Perhaps we could negotiate</button>
+  <button id="option4" onclick="kraj()">ESCAPE</button>
+  <button id="option1_2" onclick="kraj()">Punch him in the face!</button>
+  <button id="option2_2" onclick="orc_smrt()">Stab him in the guts!</button>
+  <button id="option3_2" onclick="orc_smrt()">Kick him in the groin!</button>
+  <button id="option4_2" onclick="kraj()">ESCAPE</button>
+  <button id="option1_3">That's a beautiful diamond, do you know how much it's worth?</button>
+  <button id="option2_3">Hey, nice looking diamond, where did you get it from?</button>
+  <button id="option3_3" onclick="kraj()">Ok, so you got your diamond back, now pay me my coin!</button>
+  <button id="option4_3" onclick="kraj()">Nice diamond, I'll take it!</button>
+  <button id="option1_4">Do you want to learn more about it? I know one Merchant who
+    could appraise it for you</button>
+  <button id="option2_4">Let's go to the merchant to identify this diamond!</button>
+  <button id="option1_5">I'm Arthur, from Rivendell</button>
+  <button id="option2_5">It's Arthur</button>
+  <button id="option3_5">My name is not important...</button>
+  <button id="option4_5">You can call me the Savior, because I helped you</button>
+
+  <p id="text">There he is! Let's get him!</p>
+  <p id="text2">Hahaha So you found me, what you gonna do now?</p>
+  <p id="text3">DIE!</p>
+  <p id="text4">Carefull! The orcs are hard headed!</p>
+  <p id="text5"><br>Over my dead body!</p>
+  <p id="text6">I don't negotiate with humans,
+    prepare to DIE!
+  </p>
+  <p id="text7"><br>That's it! That's my diamond!</p>
+  <p id="text8"><br>I couldn't possibly know, I found it in a cave...</p>
+  <p id="text9"><br>Yes, it is, I found it in a cave...</p>
+  <p id="text10">Sure, let's go! I didn't get to catch your name stranger, you sure helped me a lot...</p>
+  <p id="text11">Nice to meet you Arthur, let's go to this Merchant now!
+    And my name is Godwin btw</p>
+  <p id="text12"><br>Very well, let's go to this Merchant now...</p>
+
+  <p id="story">You and Halfling exited the tavern and found yourself in the dark street of the Stone Cold,
+    your eyes tried to find Orc but he's nowhere to be seen...
+  </p>
+  <p id="story2">You've escaped from the battle and now you'll never be able
+    to retrieve this object that the Orc stole and continue this adventure...
+  </p>
+  <p id="story3">You punched the Orc in the face, but he didn't feel nothing! He killed you with his bare fists!
+    I guess the Orcs are literally hard headed...
+  </p>
+  <p id="story4"><br>You pierced the Orc with your blade and he died instantly!
+    A shiny yellow diamond fell from his pocket...
+  </p>
+  <p id="story5"><br>You kicked the Orc in the groin and he lost conscience!
+    A shiny yellow diamond fell from his pocket...
+  </p>
+  <p id="story6">You took the diamond from the Halfling and later sold it to the Merchant for a few coins, and that's where your adventure ends...
+  </p>
+  <p id="story7">...and the Halfling gave you a large pile of coins and you parted ways with him,
+    your adventure ends here...
+  </p>
+  <p id="story8">And so they went to the Merchant who lives up in the Snow Mountain
+    in hope that he can tell them more about this mysterious yellow diamond...
+  </p>
+
+  <embed src="zvuk/fight.mp3" autostart="true" loop="true" width="2" height="0">
+  </embed>
+</body>
+<script src="main2.js"></script>
+
+</html>
